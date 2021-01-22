@@ -15,7 +15,10 @@ h3 {
 ion-item {
   background: #ffffff;
 }
-
+p {
+  color: #ffffff;
+  text-align: justify;
+}
 button {
   display: block;
   margin-left: auto;
