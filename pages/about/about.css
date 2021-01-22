@@ -13,7 +13,8 @@ h3 {
 }
 
 ion-item {
-  background: #ffffff;
+  text-decoration-color: ;
+  background: linear-gradient(to bottom, #267871, #ffffff, #ffffff, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff);
 }
 p {
   color: #ffffff;
