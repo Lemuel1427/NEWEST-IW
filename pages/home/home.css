@@ -30,6 +30,10 @@ ion-card-title {
   text-align: center;
 }
 
+ion-label {
+  color: #FF914D
+}
+
 h4 {
   color: #ffffff;
 }
