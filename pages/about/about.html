@@ -8,6 +8,8 @@
 
 <ion-content padding>
  
+<ion-icon name="calculator" ></ion-icon>
+
    <h2>Ideal Body Weight Calculator </h2>
 <p>
    The Ideal Weight Calculator computes ideal bodyweight (IBW) ranges based on height and gender.
@@ -86,9 +88,12 @@ For women, the ideal weight calculator uses the following equations:
   <ion-item>
     <ion-label color="dark">Height: {{inches}} inches</ion-label>
     <ion-range min="0" max="11" step="1" snaps="true" ticks="false" color="primary" pin="true" [(ngModel)]="inches">
+      <ion-icon name="calculator" slot="start" ></ion-icon>
+      <ion-icon  name="calculator" slot="end"></ion-icon>
     </ion-range>
   </ion-item>
 </ion-list>
+
 
 
 <h2> {{iwMessage}} </h2>
