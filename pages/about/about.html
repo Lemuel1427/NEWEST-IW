@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+   <h2>Ideal Body Weight Calculator </h2>
+
+<ion-item>
+  <ion-label color="dark"> Gender: </ion-label>
+  <ion-select interface="popover" [(ngModel)]="gender">
+    <ion-option value="m">Male</ion-option>
+    <ion-option value="f">Female</ion-option>
+  </ion-select>
+</ion-item>
+
+<br />
+
+<ion-list>
+  <ion-item>
+    <ion-label color="dark"> Height: {{feet}} feet</ion-label>
+    <ion-range min="0" max="9" step="1" snaps="true" ticks="false" color="primary" pin="true" [(ngModel)]="feet">
+    </ion-range>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label color="dark">Height: {{inches}} inches</ion-label>
+    <ion-range min="0" max="11" step="1" snaps="true" ticks="false" color="primary" pin="true" [(ngModel)]="inches">
+    </ion-range>
+  </ion-item>
+</ion-list>
+
+
+<button ion-button color="primary" (click)="calculateIW()"> 
+  CALCULATE
+</button>
+<br />
+
+<ion-item *ngIf="feet">
+  <h3>{{iwMessage}}</h3>
+</ion-item>
+
+<ion-item *ngIf="converted">
+  <h2> Your ideal weight according to:</h2>
+  <h3> Robinson: {{iwRobinson}} kg </h3>
+  <h3> Miller: {{iwMiller}} kg </h3>
+  <h3> Hamwi: {{iwHamwi}}  kg</h3>
+  <h3> Devine: {{iwDevine}}  kg</h3>
+
+</ion-item>
+
+
+
+</ion-content>
