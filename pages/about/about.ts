@@ -27,7 +27,7 @@ export class AboutPage {
       this.converted = 0;
     }
 
-   if (this.feet >= 5) {
+    if (this.feet >= 5) {
       if (this.gender = "m"){
         this.iwRobinson = 52 + (1.9 * (this.inches + this.converted))
         this.iwRobinson = parseFloat(this.iwRobinson.toFixed(2));
@@ -40,8 +40,8 @@ export class AboutPage {
 
         this.iwDevine = 50 + (2.3 * (this.inches + this.converted));
         this.iwDevine = parseFloat(this.iwDevine.toFixed(2));
-      } 
-      else if (this.gender = "f"){
+
+      } else if (this.gender = "f"){
         this.iwRobinson = 49 + (1.7 * (this.inches + this.converted));
         this.iwRobinson = parseFloat(this.iwRobinson.toFixed(2));
         
@@ -53,14 +53,12 @@ export class AboutPage {
 
         this.iwDevine = 45.5 + (2.3 * (this.inches + this.converted));
         this.iwDevine = parseFloat(this.iwDevine.toFixed(2));
-      }
-      else {
+
+      } else {
         this.iwMessage = "Please enter your gender.";
       }
-    }
-
-      else {
-        this.iwMessage = "The calculations are only accurate for those who are at least 5 ft tall.";
+    } else {
+      this.iwMessage = "The calculations are only accurate for those who are at least 5 ft tall.";
     }
 
   }
