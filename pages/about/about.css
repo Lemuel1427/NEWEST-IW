@@ -4,6 +4,7 @@ ion-content {
 h2 {
   color: #FF914D;
   text-align: center;
+
 }
 
 h3 {
@@ -25,6 +26,8 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  color:#ffffff;
+  background-color: #FF914D;
 }
 
 ion-icon {
@@ -32,4 +35,26 @@ ion-icon {
   text-align: center;
   display: block;
   color: #ffffff;
+}
+
+.result {
+  font-size:32px;
+  text-align: center;
+  display: block;
+  color: #FF914D;
+}
+
+ion-label{
+  color: #267871;
+  font-family: cursive;
+}
+
+ion-option {
+  color: #414645;
+  font-family: cursive;
+}
+
+.gender {
+  color: #267871;
+  font-family: cursive;
 }

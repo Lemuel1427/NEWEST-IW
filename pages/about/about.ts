@@ -4,7 +4,7 @@ import { NavController } from 'ionic-angular';
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html',
-  styleUrls:['about.css']
+  styleUrls:['about.css'],
 })
 export class AboutPage {
   feet: number;

@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content padding>
- 
+
 <ion-icon name="calculator" ></ion-icon>
 
    <h2>Ideal Body Weight Calculator </h2>
@@ -67,7 +67,7 @@ For women, the ideal weight calculator uses the following equations:
   </p>
 
 <ion-item>
-  <ion-label color="dark"> Gender: </ion-label>
+  <ion-label class="gender" color="dark"> Gender: </ion-label>
   <ion-select interface="popover" [(ngModel)]="gender">
     <ion-option value="m">Male</ion-option>
     <ion-option value="f">Female</ion-option>
@@ -87,7 +87,7 @@ For women, the ideal weight calculator uses the following equations:
 <ion-list>
   <ion-item>
     <ion-label color="dark">Height: {{inches}} inches</ion-label>
-    <ion-range min="0" max="11" step="1" snaps="true" ticks="false" color="primary" pin="true" [(ngModel)]="inches">
+    <ion-range class="range" min="0" max="11" step="1" snaps="true" ticks="false" color="primary" pin="true" [(ngModel)]="inches">
       <ion-icon name="calculator" slot="start" ></ion-icon>
       <ion-icon  name="calculator" slot="end"></ion-icon>
     </ion-range>
@@ -98,12 +98,16 @@ For women, the ideal weight calculator uses the following equations:
 
 <h2> {{iwMessage}} </h2>
 
+
+
 <button ion-button color="primary" (click)="calculateIW()"> 
   CALCULATE
 </button>
 <br />
 
 
+<ion-icon *ngIf="iwRobinson" class="result" name="arrow-down" ></ion-icon>
+<br />
 
 <ion-item *ngIf="iwRobinson">
   <h2> Your ideal weight according to:</h2>
