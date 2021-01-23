@@ -15,10 +15,13 @@ h3 {
   color: #ffffff;
   text-align: center;
   font-family: cursive;
+  line-height: 50%;
 }
 h6 {
   color: #ffffff;
-  text-align: justify;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 p {
@@ -45,8 +48,7 @@ h5 {
 }
 
 .start {
-  width: 25%;
-  height: 25%;
+  width: 20%;
   display: block;
   margin-left: auto;
   margin-right: auto;
